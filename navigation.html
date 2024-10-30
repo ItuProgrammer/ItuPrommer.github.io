@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #ffcff6;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 50px; /* Adjust logo height as needed */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color:black;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .nav-links a:hover {
+            background-color: #ffcff6;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            
+            <li><a href="#about">About</a></li>
+            
+            <li><a ref="#self">Self Check</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+</body>
+</html>

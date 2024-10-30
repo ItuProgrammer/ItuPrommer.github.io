@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <!-- Google Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Ensure the body takes up the full height of the viewport */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif; /* Applying the modern font */
+            background-color: #f5f7fa; /* Light, neutral background */
+        }
+
+        body {
+            background-image: url("ribbintrmd.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(245, 247, 250, 0.8); /* Light overlay to soften the background image */
+            background-size: contain;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #ffcff6;
+            padding: 1px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+        }
+
+        .logo img {
+            height: 50px; /* Adjust logo height as needed */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+       /* .nav-links a:hover {
+            background-color: #34495e; /* Slightly darker background on hover 
+        }*/
+
+        .self-check, .centers {
+            padding: 30px;
+            margin: 20px auto;
+            margin-top: 80px; /* Increase margin to avoid navbar overlap */
+            max-width: 800px;
+            text-align: center; 
+            background-color: #ffffff; /* Clean white background for sections */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for sections */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .self-check a, .centers a {
+            color: #3498db; /* Modern blue link color */
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 2px solid transparent; /* Initially no border */
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .self-check a:hover, .centers a:hover {
+            color: darkblue; /* Slightly darker blue on hover */
+            /*border-bottom: 2px solid #2980b9; /* Underline effect on hover */
+            background-color: transparent; /* No background on hover for cleaner look */
+        }
+
+        .self-check h2, .centers h2 {
+            color: #2c3e50; /* Darker text for headings */
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .self-check p, .centers p {
+            color: #555; /* Softer text color for paragraphs */
+            line-height: 1.6;
+        }
+
+        /* Styling for mobile responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+            }
+            .nav-links a {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/1000133114.jpg" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="cancer.html">Home</a></li>
+            <li><a href="aboutPage.html">About</a></li>
+            <li><a href="self check.html">Self Check</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="self-check">
+            <h2>Breast Cancer Self Check</h2>
+            <p><strong>We care about your well-being. If you’ve been experiencing
+                symptoms that could be related to cancer or simply want to assess
+                your risk, please take a moment to complete our confidential symptom
+                checker. This form will help identify if you might be at risk and whether
+                further screening or medical consultation is recommended.</strong>
+            </p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSft-Wu8hMEiJJRIzYU5o2ESXRRtgStrL5u9qEJCjiqGS1uBTg/viewform?usp=sf_link">[Click here to complete the form]</a></p>
+        </div>
+
+        <div class="centers">
+            <h2>Find Support Near You. Access Cancer Care Centres</h2>
+            <p><strong>After completing the symptom checker, it’s important to take the next step if you believe you’re at risk. We’ve made it easy for you to find the help you need right away. Access a List of Cancer Care Centres Near You. We’ve compiled a list of trusted cancer care centres and health facilities in your area. Whether you're looking for a facility for further screening or need immediate medical consultation, we’ve got you covered.</strong></p>
+            <p><a href="location.html" target="_blank">[Click here for cancer care centres]</a></p>
+        </div>
+    </div>
+</body>
+</html>

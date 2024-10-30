@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <style type="text/css">
+        body {
+            
+            background-image: url("ribbintrmd.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            background-size: contain;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+
+            
+        }
+
+        .contact-container {
+            background-color: #FFCFF6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+
+            background-color: rgba(255, 207, 246, 0.5); /* 50% transparency */
+
+        }
+
+        /*ICON FONT*/
+        .icon {
+            font-size: 50px;
+            color: #FC9826;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #00537B;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+        /* Navbar container */
+        .navbar a:hover{
+            background-color: rgb(15, 15, 15);
+        }
+.navbar {
+  overflow: hidden;
+  background-color: #e78acb;
+  font-family: Arial;
+  font-size: 24;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 24;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+    </style>
+</head>
+<body>
+
+
+
+    <div class="contact-container">
+        <!-- Icon at the top -->
+        <div class="icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Enter surname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
